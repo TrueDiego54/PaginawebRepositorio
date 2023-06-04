@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro en la banca por internet</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Registro en la banca por internet</h2>
+    <form>
+      <div class="form-group">
+        <label for="card-number">Número de tarjeta:</label>
+        <input type="text" id="card-number" name="card-number" required>
+      </div>
+      <div class="form-group">
+        <label for="document-type">Tipo de documento:</label>
+        <select id="document-type" name="document-type" required>
+          <option value="DNI">DNI</option>
+          <option value="CES">CES</option>
+          <option value="PAS">PAS</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="document-number">Número de documento:</label>
+        <input type="text" id="document-number" name="document-number" required>
+      </div>
+      <div class="form-group">
+        <label for="web-password">Clave web secreta:</label>
+        <input type="password" id="web-password" name="web-password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+        <label for="privacy-policy">He leído y acepto la <a href="politica_privacidad.html">Política de privacidad</a></label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="optional-data" name="optional-data">
+        <label for="optional-data">Autorizo el uso de mis datos personales para finalidades opcionales previstas en la <a href="politica_privacidad.html">Política de privacidad</a></label>
+      </div>
+      <div class="form-group">
+        <button type="submit">Registrarse</button>
+      </div>
+      <div class="form-group">
+        <p> <a href="login.html">Ingreso</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

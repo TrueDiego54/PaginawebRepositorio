@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio de sesión en la banca por internet</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="login.css">
+  <script src="scrpt.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Banca por internet</h2>
+    <img src="prestamo.png" alt="">
+
+    <form >
+      <div class="caja">
+        <input type="text" name="first-name" autocomplete="off" required/>
+        <label for="first-name" class="label-wrapper">
+            <span class="label-text">
+            Número de tarjeta
+            </span>
+        </label>
+    </div>
+      <div class="caja-seleccion">
+        <select id="document-type" name="document-type" required>
+          <option value="DNI">DNI</option>
+          <option value="CES">CES</option>
+          <option value="PAS">PAS</option>
+        </select>
+      </div>
+      <div class="caja numdoc">
+        <input type="text" name="first-name" autocomplete="off" required/>
+        <label for="first-name" class="label-wrapper">
+            <span class="label-text">
+            Número de Documento
+            </span>
+        </label>
+    </div>
+    <div class="caja contraseña">
+      <input type="password" id="pass" name="first-name" autocomplete="off" required/>
+      <label for="first-name" class="label-wrapper">
+          <span class="label-text">
+          Clave secreta  
+          </span>
+      </label>
+
+  </div>
+      <div class="form-group-check-box">
+        <input type="checkbox" id="remember-data" name="remember-data">
+        <label for="remember-data">Recordar datos</label>
+      </div>
+      <div class="a-registrarse">
+        <a href="registro.html">Regístrate</a>
+      </div>
+
+      <div class="login-button">
+        <button onclick="window.location.href = 'inicio.html';">Ingresar</button>
+      </div>
+      <p></p>
+    </form>
+    <div class="a-yuda">
+      <p><a href="ayuda.html">Ayuda</a></p>
+    </div>
+  </div>
+  
+</body>
+</html>

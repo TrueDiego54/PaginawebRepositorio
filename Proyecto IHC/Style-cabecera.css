@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.Bloque-usuario img{
+    width: 18px;
+    height: 18px;
+    display:inline;
+}
+
+.lista-encabezado{
+    list-style: none;  
+    display: flex;
+    justify-content: center;  
+    position: relative;
+    top: -10px;
+    margin: 0;
+    padding: 0;
+}
+.lista-encabezado li{
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+.lista-encabezado img{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    left: -4px;
+}
+.menu-cabecera{
+    background-color: rgb(177, 240, 84);
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    top: -16px;
+}
+.text-beforeul{
+    position: relative;
+    display: inline;
+    font-family:Arial;
+    font-weight:bold;
+    top: 38%;
+    left: 1%;
+    font-size:33px;
+}
+.lista-encabezado li button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    cursor: pointer;
+}
+.lista-encabezado li:hover{
+    background-color: rgb(121, 163, 56);
+    pointer-events:visible;
+}
+.ultimo-button{
+    border: none;
+}
+.container-text{
+    position: relative;
+    display: inline;
+    top: -69%;
+    left: 80%;
+}
+/*.text-afterul{
+    position:absolute;
+    display: inline;
+    left: 20px;
+    z-index: 1;
+}*/
+.Bloque-usuario{
+    background-color: yellow;
+    display:grid;
+    position: relative;
+    padding: auto;
+    width: 150px;
+    height: 44px;
+    top: -135%;
+    left: 87%;
+    border: 3px solid rgb(167, 167, 14);
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.flecha-bloque-usuario{
+    left: 80%;
+    transition: transform 0.3s;
+}
+.avatar-bloque-usuario{
+    left: 5%;
+}
+.Bloque-usuario img{
+    position: absolute;
+    display: inline-flex;
+    top: 30%;
+}
+.Bloque-usuario p{
+    position: relative;
+    left: 35px;
+    top: -2px;
+}
+
+.Bloque-usuario:hover .flecha-bloque-usuario{
+    transform: rotate(90deg);
+    
+}
+
+.menu-bloque-usuario{
+    position: absolute;
+    display: inline;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 100px;
+    width: 148px;
+    top: -110px;
+    left: 0px;
+    opacity: 0;
+    z-index: -1;
+    transition: top 0.9s, opacity 0.2s;
+    
+}
+.menu-bloque-usuario button{
+    position: relative;
+    top: 34px;
+    height: 30px;
+    width: 100%;
+    border-style: none;
+    cursor: pointer;
+}
+.menu-bloque-usuario:hover{
+    cursor:default;
+}
+.Bloque-usuario:hover .menu-bloque-usuario{
+    opacity: 1;
+    top: 50px;
+    transition: top 0.4s,opacity 2.1s;
+}

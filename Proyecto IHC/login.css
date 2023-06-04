@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(177, 240, 84);
+}
+
+form{
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}
+h2{
+    margin: 20px;
+    font-size: xx-large;
+}
+
+.caja{
+    top: -10px;
+    position: relative;
+    height:  52px;
+    width: 100%;
+    max-width: 300px;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.caja input{
+    color: rgb(0, 0, 0);
+    left: 9px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    background-color: transparent;
+    padding-top: 25px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.caja .label-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: inherit;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+.caja .label-wrapper::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #000000;
+    left: 0;
+    bottom:-1px;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+}
+
+.caja .label-text{
+    position: absolute;
+    bottom: 5px;
+    left: 9px;
+    transition: all 0.2s ease;
+    color: rgb(121, 121, 121);
+}
+
+.caja input:focus + .label-wrapper .label-text,
+.caja input:valid + .label-wrapper .label-text{
+    font-size: 12px;
+    color: #000000;
+    transform: translateY(-150%);
+}
+
+.caja input:focus + .label-wrapper::after,
+.caja input:valid + .label-wrapper::after{
+    transform: translateX(0%);
+}
+.numdoc{
+    max-width: 254px;
+    position: inherit;
+    top: 54px;
+    left: 62px;
+}
+#document-type{
+    background-color: none;
+    border: none;    
+    border-style: none;
+}
+
+.contraseña{
+    margin-top: 10px;
+}
+
+.form-group-check-box{
+    position: relative;
+    left: 5%;
+}
+.a-registrarse{
+    position: relative;
+    left: 40%;
+    margin: 5px 0 10px 0;
+}
+.login-button{
+    margin: 15px 0 5px 0;
+    position: relative;
+}
+.login-button button{
+    border-radius: 20px;
+    background-color: #13d102;
+    color: #fff;
+    height: 30px;
+    width: 300px;
+    border-style: outset;
+    border: 2px outset green;
+}
+
+.login-button button:focus{
+    background-color: #0c9400;
+    border: 2px outset #0fb300;
+}
+
+.a-yuda{
+    position: absolute;
+    top: 445px;
+    left: 61%;
+}
+img{
+    position: relative;
+    left: 190px;
+    top: 20px;
+}
+.contraseña check-pass{
+    position: relative;
+    left :10px;
+    z-index: 1;
+}
